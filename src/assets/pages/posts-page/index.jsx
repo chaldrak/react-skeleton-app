@@ -20,7 +20,7 @@ const PostsPage = () => {
     setInterval(fecthPosts, 2000);
   }, [userId]);
   return (
-    <div className="flex w-[600px] flex-col mx-auto items-center space-y-4 my-10 [&_h2]:font-bold [&_p]:text-grey">
+    <div className="flex px-5 md:w-[600px] flex-col mx-auto items-center space-y-4 my-10 [&_h2]:font-bold [&_p]:text-grey">
       {!isLoading && <Link to="/">Back</Link>}
       {isLoading && <PostCardSkeleton count={10} />}
       {posts.map((post, index) => (

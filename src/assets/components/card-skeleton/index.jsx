@@ -6,10 +6,10 @@ const CardSkeleton = ({ count }) => {
   return cards.map((_, i) => (
     <div
       key={i}
-      className="bg-gray px-10 rounded-md py-5 flex items-center space-x-5 border w-full"
+      className="bg-gray px-5 sm:px-10 rounded-md py-5 flex items-center space-x-5 border w-full"
     >
       <Skeleton circle width={80} height={80} />
-      <div className="w-[260px]">
+      <div className="w-[200px]">
         <Skeleton />
         <Skeleton />
         <Skeleton />
