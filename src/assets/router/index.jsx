@@ -18,7 +18,7 @@ const Routage = () => {
           <Routes>
             <Route path="/" element={<Navigate to="/users" />} />
             <Route path="/users" element={<HomePage />} />
-            <Route path="/users/:userId/post" element={<PostsPage />} />
+            <Route path="/users/:userId/posts" element={<PostsPage />} />
           </Routes>
           <Footer />
         </Router>
